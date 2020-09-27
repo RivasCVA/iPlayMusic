@@ -1,0 +1,29 @@
+[
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/MusicController.swift",
+    "offset": 1321,
+    "remove": 2,
+    "text": " "
+  },
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/MusicController.swift",
+    "offset": 1337,
+    "remove": 1,
+    "text": ".i"
+  },
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/MusicController.swift",
+    "offset": 1345,
+    "text": "tionNotifica"
+  },
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/MusicController.swift",
+    "offset": 13782,
+    "text": "."
+  },
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/MusicController.swift",
+    "offset": 14338,
+    "text": "."
+  }
+]

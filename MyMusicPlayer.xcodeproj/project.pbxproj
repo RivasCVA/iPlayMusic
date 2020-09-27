@@ -7,21 +7,187 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07E215AE1FF598B90025B782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E215AD1FF598B90025B782 /* AppDelegate.swift */; };
-		07E215B01FF598B90025B782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E215AF1FF598B90025B782 /* ViewController.swift */; };
+		070E2ED12006EA8D0030FB6C /* MusicSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E2ED02006EA8D0030FB6C /* MusicSong.swift */; };
+		070E2ED32006EC760030FB6C /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070E2ED22006EC760030FB6C /* MusicController.swift */; };
+		070E2EDD2007248E0030FB6C /* CheapThrills.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 070E2EDC2007248E0030FB6C /* CheapThrills.jpg */; };
+		070E2EDF200724940030FB6C /* PostMalone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 070E2EDE200724940030FB6C /* PostMalone.jpg */; };
+		072BE2C92026E1D80056BF42 /* SongSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = 072BE2C82026E1D80056BF42 /* SongSlider.png */; };
+		072BE2D52026E9F00056BF42 /* SongSlider2.png in Resources */ = {isa = PBXBuildFile; fileRef = 072BE2D42026E9F00056BF42 /* SongSlider2.png */; };
+		07649204203FCD1000E02F14 /* ScaryHours.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076491FD203FCD0E00E02F14 /* ScaryHours.jpg */; };
+		07649205203FCD1000E02F14 /* Corazon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076491FE203FCD0E00E02F14 /* Corazon.jpg */; };
+		07649206203FCD1000E02F14 /* Rockstar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076491FF203FCD0F00E02F14 /* Rockstar.jpg */; };
+		07649207203FCD1000E02F14 /* FelicesLos4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07649200203FCD0F00E02F14 /* FelicesLos4.jpg */; };
+		07649208203FCD1000E02F14 /* CNCO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07649201203FCD0F00E02F14 /* CNCO.jpg */; };
+		07649209203FCD1000E02F14 /* Perfect.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07649202203FCD1000E02F14 /* Perfect.jpg */; };
+		0764920A203FCD1000E02F14 /* TheGreatest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07649203203FCD1000E02F14 /* TheGreatest.jpg */; };
+		076501B5207B1E4700451FF2 /* FeelingGood.png in Resources */ = {isa = PBXBuildFile; fileRef = 076501B1207B1E4600451FF2 /* FeelingGood.png */; };
+		076501B6207B1E4700451FF2 /* FlyMeToTheMoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076501B2207B1E4600451FF2 /* FlyMeToTheMoon.jpg */; };
+		076501B7207B1E4700451FF2 /* YouMakeMeFeelSoYoung.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076501B3207B1E4600451FF2 /* YouMakeMeFeelSoYoung.jpg */; };
+		076501B8207B1E4700451FF2 /* ComeFlyWithMe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 076501B4207B1E4700451FF2 /* ComeFlyWithMe.jpg */; };
+		076501CE207B1EBA00451FF2 /* BellaYSensual.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076501C7207B1EB900451FF2 /* BellaYSensual.mp3 */; };
+		076501CF207B1EBA00451FF2 /* LetYouDown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076501C8207B1EB900451FF2 /* LetYouDown.mp3 */; };
+		076501D0207B1EBA00451FF2 /* HeyDJ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076501C9207B1EB900451FF2 /* HeyDJ.mp3 */; };
+		076501D1207B1EBA00451FF2 /* LaRompeCorazones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076501CA207B1EB900451FF2 /* LaRompeCorazones.mp3 */; };
+		076501D2207B1EBA00451FF2 /* HastaElAmanecer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076501CB207B1EBA00451FF2 /* HastaElAmanecer.mp3 */; };
+		076501D3207B1EBA00451FF2 /* HowLong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076501CC207B1EBA00451FF2 /* HowLong.mp3 */; };
+		076501D4207B1EBA00451FF2 /* Psycho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 076501CD207B1EBA00451FF2 /* Psycho.mp3 */; };
+		0769CDC1203E7B9A00621EC7 /* VolumeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0769CDBE203E7B9900621EC7 /* VolumeLogo.png */; };
+		0769CDC2203E7B9A00621EC7 /* NextLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0769CDBF203E7B9900621EC7 /* NextLogo.png */; };
+		0769CDC3203E7B9A00621EC7 /* PreviousLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0769CDC0203E7B9A00621EC7 /* PreviousLogo.png */; };
+		077C6C132033FA1200626003 /* ThumbSlider.png in Resources */ = {isa = PBXBuildFile; fileRef = 077C6C122033FA1200626003 /* ThumbSlider.png */; };
+		077C6C152033FB4500626003 /* SliderThumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077C6C142033FB4500626003 /* SliderThumb.swift */; };
+		078E596A2011AA5900048EA2 /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 078E59692011AA5900048EA2 /* PlayButton.png */; };
+		078E596C2011AB1600048EA2 /* PauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 078E596B2011AB1600048EA2 /* PauseButton.png */; };
+		0791B404208E9C110092E88A /* DNA.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3F6208E9C0F0092E88A /* DNA.mp3 */; };
+		0791B405208E9C110092E88A /* UnaLadyComoTu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3F7208E9C0F0092E88A /* UnaLadyComoTu.mp3 */; };
+		0791B406208E9C110092E88A /* VentePaCa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3F8208E9C0F0092E88A /* VentePaCa.mp3 */; };
+		0791B407208E9C110092E88A /* Finesse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3F9208E9C0F0092E88A /* Finesse.mp3 */; };
+		0791B408208E9C110092E88A /* Broccoli.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3FA208E9C100092E88A /* Broccoli.mp3 */; };
+		0791B409208E9C110092E88A /* ManOfTheYear.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3FB208E9C100092E88A /* ManOfTheYear.mp3 */; };
+		0791B40A208E9C110092E88A /* 1-800-273-8255.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3FC208E9C100092E88A /* 1-800-273-8255.mp3 */; };
+		0791B40B208E9C110092E88A /* Dura.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3FD208E9C100092E88A /* Dura.mp3 */; };
+		0791B40C208E9C110092E88A /* BorroCassette.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3FE208E9C100092E88A /* BorroCassette.mp3 */; };
+		0791B40D208E9C110092E88A /* MeRehuso.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B3FF208E9C100092E88A /* MeRehuso.mp3 */; };
+		0791B40E208E9C110092E88A /* NewRules.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B400208E9C100092E88A /* NewRules.mp3 */; };
+		0791B40F208E9C110092E88A /* EndGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B401208E9C100092E88A /* EndGame.mp3 */; };
+		0791B410208E9C110092E88A /* Humble.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B402208E9C100092E88A /* Humble.mp3 */; };
+		0791B411208E9C110092E88A /* ImTheOne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0791B403208E9C110092E88A /* ImTheOne.mp3 */; };
+		0791B41E208E9E200092E88A /* EndGame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B412208E9E1E0092E88A /* EndGame.jpg */; };
+		0791B41F208E9E200092E88A /* MeRehuso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B413208E9E1E0092E88A /* MeRehuso.jpg */; };
+		0791B420208E9E200092E88A /* VentePaCa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B414208E9E1F0092E88A /* VentePaCa.jpg */; };
+		0791B421208E9E200092E88A /* ImTheOne.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B415208E9E1F0092E88A /* ImTheOne.jpeg */; };
+		0791B422208E9E200092E88A /* Finesse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B416208E9E1F0092E88A /* Finesse.jpg */; };
+		0791B423208E9E200092E88A /* 1800.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B417208E9E1F0092E88A /* 1800.jpg */; };
+		0791B424208E9E200092E88A /* Dura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B418208E9E1F0092E88A /* Dura.jpg */; };
+		0791B425208E9E200092E88A /* BorroCassete.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B419208E9E1F0092E88A /* BorroCassete.jpg */; };
+		0791B426208E9E200092E88A /* Damn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B41A208E9E1F0092E88A /* Damn.jpg */; };
+		0791B427208E9E200092E88A /* DuaLipa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B41B208E9E1F0092E88A /* DuaLipa.jpg */; };
+		0791B428208E9E200092E88A /* Broccoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B41C208E9E1F0092E88A /* Broccoli.jpg */; };
+		0791B429208E9E200092E88A /* UnaLadyComoTu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0791B41D208E9E200092E88A /* UnaLadyComoTu.jpg */; };
+		07A261732047C0C5003F85AC /* NoImageWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A261722047C0C5003F85AC /* NoImageWarning.png */; };
+		07A2618B2047C288003F85AC /* CheapThrills.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A2617D2047C288003F85AC /* CheapThrills.mp3 */; };
+		07A2618C2047C288003F85AC /* ComeFlyWithMe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A2617E2047C288003F85AC /* ComeFlyWithMe.mp3 */; };
+		07A2618D2047C288003F85AC /* Congratulations.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A2617F2047C288003F85AC /* Congratulations.mp3 */; };
+		07A2618E2047C288003F85AC /* Corazon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261802047C288003F85AC /* Corazon.mp3 */; };
+		07A2618F2047C288003F85AC /* Everybody.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261812047C288003F85AC /* Everybody.mp3 */; };
+		07A261902047C288003F85AC /* FeelingGood.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261822047C288003F85AC /* FeelingGood.mp3 */; };
+		07A261912047C288003F85AC /* FelicesLos4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261832047C288003F85AC /* FelicesLos4.mp3 */; };
+		07A261922047C288003F85AC /* FlyMeToTheMoon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261842047C288003F85AC /* FlyMeToTheMoon.mp3 */; };
+		07A261932047C288003F85AC /* GodsPlan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261852047C288003F85AC /* GodsPlan.mp3 */; };
+		07A261942047C288003F85AC /* Perfect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261862047C288003F85AC /* Perfect.mp3 */; };
+		07A261952047C288003F85AC /* ReggaetonLento.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261872047C288003F85AC /* ReggaetonLento.mp3 */; };
+		07A261962047C288003F85AC /* Rockstar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261882047C288003F85AC /* Rockstar.mp3 */; };
+		07A261972047C288003F85AC /* TheGreatest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A261892047C288003F85AC /* TheGreatest.mp3 */; };
+		07A261982047C288003F85AC /* YouMakeMeFeelSoYoung.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 07A2618A2047C288003F85AC /* YouMakeMeFeelSoYoung.mp3 */; };
+		07BF0C8120072AE000D86E1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BF0C8020072AE000D86E1C /* ViewController.swift */; };
+		07CE481B204E53070084ECDE /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE481A204E53070084ECDE /* CustomTableViewCell.swift */; };
+		07D0BDB52005C86C004CEC25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D0BDB12005C86B004CEC25 /* AppDelegate.swift */; };
+		07D0BDB62005C86C004CEC25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07D0BDB22005C86B004CEC25 /* Assets.xcassets */; };
+		07D0BDB72005C86C004CEC25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D0BDB32005C86B004CEC25 /* LaunchScreen.storyboard */; };
+		07D0BDB92005CEB5004CEC25 /* LogicPic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 07D0BDB82005CEB5004CEC25 /* LogicPic.jpeg */; };
 		07E215B31FF598B90025B782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E215B11FF598B90025B782 /* Main.storyboard */; };
-		07E215B51FF598BA0025B782 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E215B41FF598BA0025B782 /* Assets.xcassets */; };
-		07E215B81FF598BA0025B782 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E215B61FF598BA0025B782 /* LaunchScreen.storyboard */; };
+		07E215FE1FF6C69D0025B782 /* AudioSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E215FD1FF6C69D0025B782 /* AudioSystem.swift */; };
+		07F78D68207F02E4008F3719 /* HastaElAmanecer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07F78D61207F02E3008F3719 /* HastaElAmanecer.jpg */; };
+		07F78D69207F02E4008F3719 /* Psycho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07F78D62207F02E3008F3719 /* Psycho.jpg */; };
+		07F78D6A207F02E4008F3719 /* LaRompeCorazones.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07F78D63207F02E3008F3719 /* LaRompeCorazones.jpg */; };
+		07F78D6B207F02E4008F3719 /* HeyDJ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07F78D64207F02E3008F3719 /* HeyDJ.jpg */; };
+		07F78D6C207F02E4008F3719 /* HowLong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07F78D65207F02E4008F3719 /* HowLong.jpg */; };
+		07F78D6D207F02E4008F3719 /* BellaYSensual.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07F78D66207F02E4008F3719 /* BellaYSensual.jpg */; };
+		07F78D6E207F02E4008F3719 /* LetYouDown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 07F78D67207F02E4008F3719 /* LetYouDown.jpg */; };
+		07F78D70207F04F0008F3719 /* AllSongsStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F78D6F207F04F0008F3719 /* AllSongsStart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070E2ED02006EA8D0030FB6C /* MusicSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSong.swift; sourceTree = "<group>"; };
+		070E2ED22006EC760030FB6C /* MusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
+		070E2EDC2007248E0030FB6C /* CheapThrills.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CheapThrills.jpg; sourceTree = "<group>"; };
+		070E2EDE200724940030FB6C /* PostMalone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PostMalone.jpg; sourceTree = "<group>"; };
+		072BE2C82026E1D80056BF42 /* SongSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SongSlider.png; sourceTree = "<group>"; };
+		072BE2D42026E9F00056BF42 /* SongSlider2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SongSlider2.png; sourceTree = "<group>"; };
+		076491FD203FCD0E00E02F14 /* ScaryHours.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ScaryHours.jpg; sourceTree = "<group>"; };
+		076491FE203FCD0E00E02F14 /* Corazon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Corazon.jpg; sourceTree = "<group>"; };
+		076491FF203FCD0F00E02F14 /* Rockstar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rockstar.jpg; sourceTree = "<group>"; };
+		07649200203FCD0F00E02F14 /* FelicesLos4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FelicesLos4.jpg; sourceTree = "<group>"; };
+		07649201203FCD0F00E02F14 /* CNCO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CNCO.jpg; sourceTree = "<group>"; };
+		07649202203FCD1000E02F14 /* Perfect.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Perfect.jpg; sourceTree = "<group>"; };
+		07649203203FCD1000E02F14 /* TheGreatest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TheGreatest.jpg; sourceTree = "<group>"; };
+		076501B1207B1E4600451FF2 /* FeelingGood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FeelingGood.png; sourceTree = "<group>"; };
+		076501B2207B1E4600451FF2 /* FlyMeToTheMoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FlyMeToTheMoon.jpg; sourceTree = "<group>"; };
+		076501B3207B1E4600451FF2 /* YouMakeMeFeelSoYoung.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = YouMakeMeFeelSoYoung.jpg; sourceTree = "<group>"; };
+		076501B4207B1E4700451FF2 /* ComeFlyWithMe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ComeFlyWithMe.jpg; sourceTree = "<group>"; };
+		076501C7207B1EB900451FF2 /* BellaYSensual.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BellaYSensual.mp3; sourceTree = "<group>"; };
+		076501C8207B1EB900451FF2 /* LetYouDown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LetYouDown.mp3; sourceTree = "<group>"; };
+		076501C9207B1EB900451FF2 /* HeyDJ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HeyDJ.mp3; sourceTree = "<group>"; };
+		076501CA207B1EB900451FF2 /* LaRompeCorazones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = LaRompeCorazones.mp3; sourceTree = "<group>"; };
+		076501CB207B1EBA00451FF2 /* HastaElAmanecer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HastaElAmanecer.mp3; sourceTree = "<group>"; };
+		076501CC207B1EBA00451FF2 /* HowLong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HowLong.mp3; sourceTree = "<group>"; };
+		076501CD207B1EBA00451FF2 /* Psycho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Psycho.mp3; sourceTree = "<group>"; };
+		0769CDBE203E7B9900621EC7 /* VolumeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VolumeLogo.png; sourceTree = "<group>"; };
+		0769CDBF203E7B9900621EC7 /* NextLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NextLogo.png; sourceTree = "<group>"; };
+		0769CDC0203E7B9A00621EC7 /* PreviousLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PreviousLogo.png; sourceTree = "<group>"; };
+		077C6C122033FA1200626003 /* ThumbSlider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThumbSlider.png; sourceTree = "<group>"; };
+		077C6C142033FB4500626003 /* SliderThumb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderThumb.swift; sourceTree = "<group>"; };
+		078E59692011AA5900048EA2 /* PlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButton.png; sourceTree = "<group>"; };
+		078E596B2011AB1600048EA2 /* PauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseButton.png; sourceTree = "<group>"; };
+		0791B3F6208E9C0F0092E88A /* DNA.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DNA.mp3; sourceTree = "<group>"; };
+		0791B3F7208E9C0F0092E88A /* UnaLadyComoTu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = UnaLadyComoTu.mp3; sourceTree = "<group>"; };
+		0791B3F8208E9C0F0092E88A /* VentePaCa.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = VentePaCa.mp3; sourceTree = "<group>"; };
+		0791B3F9208E9C0F0092E88A /* Finesse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Finesse.mp3; sourceTree = "<group>"; };
+		0791B3FA208E9C100092E88A /* Broccoli.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Broccoli.mp3; sourceTree = "<group>"; };
+		0791B3FB208E9C100092E88A /* ManOfTheYear.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ManOfTheYear.mp3; sourceTree = "<group>"; };
+		0791B3FC208E9C100092E88A /* 1-800-273-8255.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "1-800-273-8255.mp3"; sourceTree = "<group>"; };
+		0791B3FD208E9C100092E88A /* Dura.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dura.mp3; sourceTree = "<group>"; };
+		0791B3FE208E9C100092E88A /* BorroCassette.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BorroCassette.mp3; sourceTree = "<group>"; };
+		0791B3FF208E9C100092E88A /* MeRehuso.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MeRehuso.mp3; sourceTree = "<group>"; };
+		0791B400208E9C100092E88A /* NewRules.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NewRules.mp3; sourceTree = "<group>"; };
+		0791B401208E9C100092E88A /* EndGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EndGame.mp3; sourceTree = "<group>"; };
+		0791B402208E9C100092E88A /* Humble.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Humble.mp3; sourceTree = "<group>"; };
+		0791B403208E9C110092E88A /* ImTheOne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ImTheOne.mp3; sourceTree = "<group>"; };
+		0791B412208E9E1E0092E88A /* EndGame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = EndGame.jpg; sourceTree = "<group>"; };
+		0791B413208E9E1E0092E88A /* MeRehuso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MeRehuso.jpg; sourceTree = "<group>"; };
+		0791B414208E9E1F0092E88A /* VentePaCa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = VentePaCa.jpg; sourceTree = "<group>"; };
+		0791B415208E9E1F0092E88A /* ImTheOne.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ImTheOne.jpeg; sourceTree = "<group>"; };
+		0791B416208E9E1F0092E88A /* Finesse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Finesse.jpg; sourceTree = "<group>"; };
+		0791B417208E9E1F0092E88A /* 1800.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1800.jpg; sourceTree = "<group>"; };
+		0791B418208E9E1F0092E88A /* Dura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Dura.jpg; sourceTree = "<group>"; };
+		0791B419208E9E1F0092E88A /* BorroCassete.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BorroCassete.jpg; sourceTree = "<group>"; };
+		0791B41A208E9E1F0092E88A /* Damn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Damn.jpg; sourceTree = "<group>"; };
+		0791B41B208E9E1F0092E88A /* DuaLipa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DuaLipa.jpg; sourceTree = "<group>"; };
+		0791B41C208E9E1F0092E88A /* Broccoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Broccoli.jpg; sourceTree = "<group>"; };
+		0791B41D208E9E200092E88A /* UnaLadyComoTu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UnaLadyComoTu.jpg; sourceTree = "<group>"; };
+		07A261722047C0C5003F85AC /* NoImageWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoImageWarning.png; sourceTree = "<group>"; };
+		07A2617D2047C288003F85AC /* CheapThrills.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CheapThrills.mp3; sourceTree = "<group>"; };
+		07A2617E2047C288003F85AC /* ComeFlyWithMe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ComeFlyWithMe.mp3; sourceTree = "<group>"; };
+		07A2617F2047C288003F85AC /* Congratulations.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Congratulations.mp3; sourceTree = "<group>"; };
+		07A261802047C288003F85AC /* Corazon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Corazon.mp3; sourceTree = "<group>"; };
+		07A261812047C288003F85AC /* Everybody.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Everybody.mp3; sourceTree = "<group>"; };
+		07A261822047C288003F85AC /* FeelingGood.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FeelingGood.mp3; sourceTree = "<group>"; };
+		07A261832047C288003F85AC /* FelicesLos4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FelicesLos4.mp3; sourceTree = "<group>"; };
+		07A261842047C288003F85AC /* FlyMeToTheMoon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FlyMeToTheMoon.mp3; sourceTree = "<group>"; };
+		07A261852047C288003F85AC /* GodsPlan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = GodsPlan.mp3; sourceTree = "<group>"; };
+		07A261862047C288003F85AC /* Perfect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Perfect.mp3; sourceTree = "<group>"; };
+		07A261872047C288003F85AC /* ReggaetonLento.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ReggaetonLento.mp3; sourceTree = "<group>"; };
+		07A261882047C288003F85AC /* Rockstar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rockstar.mp3; sourceTree = "<group>"; };
+		07A261892047C288003F85AC /* TheGreatest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TheGreatest.mp3; sourceTree = "<group>"; };
+		07A2618A2047C288003F85AC /* YouMakeMeFeelSoYoung.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = YouMakeMeFeelSoYoung.mp3; sourceTree = "<group>"; };
+		07BF0C8020072AE000D86E1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07CE481A204E53070084ECDE /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		07D0BDB12005C86B004CEC25 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07D0BDB22005C86B004CEC25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07D0BDB42005C86B004CEC25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07D0BDB82005CEB5004CEC25 /* LogicPic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LogicPic.jpeg; sourceTree = "<group>"; };
 		07E215AA1FF598B80025B782 /* MyMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		07E215AD1FF598B90025B782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		07E215AF1FF598B90025B782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		07E215B21FF598B90025B782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07E215B41FF598BA0025B782 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		07E215B71FF598BA0025B782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07E215B91FF598BA0025B782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E215FD1FF6C69D0025B782 /* AudioSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSystem.swift; sourceTree = "<group>"; };
+		07F78D61207F02E3008F3719 /* HastaElAmanecer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HastaElAmanecer.jpg; sourceTree = "<group>"; };
+		07F78D62207F02E3008F3719 /* Psycho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Psycho.jpg; sourceTree = "<group>"; };
+		07F78D63207F02E3008F3719 /* LaRompeCorazones.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LaRompeCorazones.jpg; sourceTree = "<group>"; };
+		07F78D64207F02E3008F3719 /* HeyDJ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HeyDJ.jpg; sourceTree = "<group>"; };
+		07F78D65207F02E4008F3719 /* HowLong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HowLong.jpg; sourceTree = "<group>"; };
+		07F78D66207F02E4008F3719 /* BellaYSensual.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BellaYSensual.jpg; sourceTree = "<group>"; };
+		07F78D67207F02E4008F3719 /* LetYouDown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LetYouDown.jpg; sourceTree = "<group>"; };
+		07F78D6F207F04F0008F3719 /* AllSongsStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllSongsStart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,11 +201,128 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070E2EDB200724490030FB6C /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				0791B417208E9E1F0092E88A /* 1800.jpg */,
+				0791B419208E9E1F0092E88A /* BorroCassete.jpg */,
+				0791B41C208E9E1F0092E88A /* Broccoli.jpg */,
+				0791B41A208E9E1F0092E88A /* Damn.jpg */,
+				0791B41B208E9E1F0092E88A /* DuaLipa.jpg */,
+				0791B418208E9E1F0092E88A /* Dura.jpg */,
+				0791B412208E9E1E0092E88A /* EndGame.jpg */,
+				0791B416208E9E1F0092E88A /* Finesse.jpg */,
+				0791B415208E9E1F0092E88A /* ImTheOne.jpeg */,
+				0791B413208E9E1E0092E88A /* MeRehuso.jpg */,
+				0791B41D208E9E200092E88A /* UnaLadyComoTu.jpg */,
+				0791B414208E9E1F0092E88A /* VentePaCa.jpg */,
+				07F78D66207F02E4008F3719 /* BellaYSensual.jpg */,
+				07F78D61207F02E3008F3719 /* HastaElAmanecer.jpg */,
+				07F78D64207F02E3008F3719 /* HeyDJ.jpg */,
+				07F78D65207F02E4008F3719 /* HowLong.jpg */,
+				07F78D63207F02E3008F3719 /* LaRompeCorazones.jpg */,
+				07F78D67207F02E4008F3719 /* LetYouDown.jpg */,
+				07F78D62207F02E3008F3719 /* Psycho.jpg */,
+				076501B4207B1E4700451FF2 /* ComeFlyWithMe.jpg */,
+				076501B1207B1E4600451FF2 /* FeelingGood.png */,
+				076501B2207B1E4600451FF2 /* FlyMeToTheMoon.jpg */,
+				076501B3207B1E4600451FF2 /* YouMakeMeFeelSoYoung.jpg */,
+				07A261722047C0C5003F85AC /* NoImageWarning.png */,
+				07649201203FCD0F00E02F14 /* CNCO.jpg */,
+				076491FE203FCD0E00E02F14 /* Corazon.jpg */,
+				07649200203FCD0F00E02F14 /* FelicesLos4.jpg */,
+				07649202203FCD1000E02F14 /* Perfect.jpg */,
+				076491FF203FCD0F00E02F14 /* Rockstar.jpg */,
+				076491FD203FCD0E00E02F14 /* ScaryHours.jpg */,
+				07649203203FCD1000E02F14 /* TheGreatest.jpg */,
+				070E2EDC2007248E0030FB6C /* CheapThrills.jpg */,
+				070E2EDE200724940030FB6C /* PostMalone.jpg */,
+				07D0BDB82005CEB5004CEC25 /* LogicPic.jpeg */,
+			);
+			path = Artwork;
+			sourceTree = "<group>";
+		};
+		072BE2C52026E15E0056BF42 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0769CDBF203E7B9900621EC7 /* NextLogo.png */,
+				0769CDC0203E7B9A00621EC7 /* PreviousLogo.png */,
+				0769CDBE203E7B9900621EC7 /* VolumeLogo.png */,
+				078E59692011AA5900048EA2 /* PlayButton.png */,
+				078E596B2011AB1600048EA2 /* PauseButton.png */,
+				077C6C122033FA1200626003 /* ThumbSlider.png */,
+				072BE2D42026E9F00056BF42 /* SongSlider2.png */,
+				072BE2C82026E1D80056BF42 /* SongSlider.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		072BE2D620296DD00056BF42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07A2617C2047C288003F85AC /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0791B3FC208E9C100092E88A /* 1-800-273-8255.mp3 */,
+				0791B3FE208E9C100092E88A /* BorroCassette.mp3 */,
+				0791B3FA208E9C100092E88A /* Broccoli.mp3 */,
+				0791B3F6208E9C0F0092E88A /* DNA.mp3 */,
+				0791B3FD208E9C100092E88A /* Dura.mp3 */,
+				0791B401208E9C100092E88A /* EndGame.mp3 */,
+				0791B3F9208E9C0F0092E88A /* Finesse.mp3 */,
+				0791B402208E9C100092E88A /* Humble.mp3 */,
+				0791B403208E9C110092E88A /* ImTheOne.mp3 */,
+				0791B3FB208E9C100092E88A /* ManOfTheYear.mp3 */,
+				0791B3FF208E9C100092E88A /* MeRehuso.mp3 */,
+				0791B400208E9C100092E88A /* NewRules.mp3 */,
+				0791B3F7208E9C0F0092E88A /* UnaLadyComoTu.mp3 */,
+				0791B3F8208E9C0F0092E88A /* VentePaCa.mp3 */,
+				076501C7207B1EB900451FF2 /* BellaYSensual.mp3 */,
+				076501CB207B1EBA00451FF2 /* HastaElAmanecer.mp3 */,
+				076501C9207B1EB900451FF2 /* HeyDJ.mp3 */,
+				076501CC207B1EBA00451FF2 /* HowLong.mp3 */,
+				076501CA207B1EB900451FF2 /* LaRompeCorazones.mp3 */,
+				076501C8207B1EB900451FF2 /* LetYouDown.mp3 */,
+				076501CD207B1EBA00451FF2 /* Psycho.mp3 */,
+				07A2617D2047C288003F85AC /* CheapThrills.mp3 */,
+				07A2617E2047C288003F85AC /* ComeFlyWithMe.mp3 */,
+				07A2617F2047C288003F85AC /* Congratulations.mp3 */,
+				07A261802047C288003F85AC /* Corazon.mp3 */,
+				07A261812047C288003F85AC /* Everybody.mp3 */,
+				07A261822047C288003F85AC /* FeelingGood.mp3 */,
+				07A261832047C288003F85AC /* FelicesLos4.mp3 */,
+				07A261842047C288003F85AC /* FlyMeToTheMoon.mp3 */,
+				07A261852047C288003F85AC /* GodsPlan.mp3 */,
+				07A261862047C288003F85AC /* Perfect.mp3 */,
+				07A261872047C288003F85AC /* ReggaetonLento.mp3 */,
+				07A261882047C288003F85AC /* Rockstar.mp3 */,
+				07A261892047C288003F85AC /* TheGreatest.mp3 */,
+				07A2618A2047C288003F85AC /* YouMakeMeFeelSoYoung.mp3 */,
+			);
+			name = Music;
+			path = MyMusicPlayer/Music;
+			sourceTree = SOURCE_ROOT;
+		};
+		07D0BDB02005C86B004CEC25 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				07D0BDB12005C86B004CEC25 /* AppDelegate.swift */,
+				07D0BDB22005C86B004CEC25 /* Assets.xcassets */,
+				07D0BDB32005C86B004CEC25 /* LaunchScreen.storyboard */,
+			);
+			path = Defaults;
+			sourceTree = SOURCE_ROOT;
+		};
 		07E215A11FF598B70025B782 = {
 			isa = PBXGroup;
 			children = (
 				07E215AC1FF598B80025B782 /* MyMusicPlayer */,
 				07E215AB1FF598B80025B782 /* Products */,
+				072BE2D620296DD00056BF42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +337,19 @@
 		07E215AC1FF598B80025B782 /* MyMusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				07E215AD1FF598B90025B782 /* AppDelegate.swift */,
-				07E215AF1FF598B90025B782 /* ViewController.swift */,
+				070E2ED02006EA8D0030FB6C /* MusicSong.swift */,
+				07E215FD1FF6C69D0025B782 /* AudioSystem.swift */,
+				070E2ED22006EC760030FB6C /* MusicController.swift */,
+				07BF0C8020072AE000D86E1C /* ViewController.swift */,
 				07E215B11FF598B90025B782 /* Main.storyboard */,
-				07E215B41FF598BA0025B782 /* Assets.xcassets */,
-				07E215B61FF598BA0025B782 /* LaunchScreen.storyboard */,
 				07E215B91FF598BA0025B782 /* Info.plist */,
+				077C6C142033FB4500626003 /* SliderThumb.swift */,
+				07CE481A204E53070084ECDE /* CustomTableViewCell.swift */,
+				07F78D6F207F04F0008F3719 /* AllSongsStart.swift */,
+				070E2EDB200724490030FB6C /* Artwork */,
+				07A2617C2047C288003F85AC /* Music */,
+				072BE2C52026E15E0056BF42 /* Images */,
+				07D0BDB02005C86B004CEC25 /* Defaults */,
 			);
 			path = MyMusicPlayer;
 			sourceTree = "<group>";
@@ -91,12 +381,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = CarlosRivas;
 				TargetAttributes = {
 					07E215A91FF598B80025B782 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1200;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -123,9 +422,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E215B81FF598BA0025B782 /* LaunchScreen.storyboard in Resources */,
-				07E215B51FF598BA0025B782 /* Assets.xcassets in Resources */,
+				077C6C132033FA1200626003 /* ThumbSlider.png in Resources */,
+				07F78D6A207F02E4008F3719 /* LaRompeCorazones.jpg in Resources */,
+				07649208203FCD1000E02F14 /* CNCO.jpg in Resources */,
+				0791B425208E9E200092E88A /* BorroCassete.jpg in Resources */,
+				076501D1207B1EBA00451FF2 /* LaRompeCorazones.mp3 in Resources */,
+				07F78D69207F02E4008F3719 /* Psycho.jpg in Resources */,
+				0769CDC2203E7B9A00621EC7 /* NextLogo.png in Resources */,
+				078E596C2011AB1600048EA2 /* PauseButton.png in Resources */,
+				07A261932047C288003F85AC /* GodsPlan.mp3 in Resources */,
+				07A261962047C288003F85AC /* Rockstar.mp3 in Resources */,
+				0791B422208E9E200092E88A /* Finesse.jpg in Resources */,
+				0791B409208E9C110092E88A /* ManOfTheYear.mp3 in Resources */,
+				07A2618C2047C288003F85AC /* ComeFlyWithMe.mp3 in Resources */,
+				076501B6207B1E4700451FF2 /* FlyMeToTheMoon.jpg in Resources */,
+				07A261982047C288003F85AC /* YouMakeMeFeelSoYoung.mp3 in Resources */,
+				0791B40E208E9C110092E88A /* NewRules.mp3 in Resources */,
+				0791B408208E9C110092E88A /* Broccoli.mp3 in Resources */,
+				07A261972047C288003F85AC /* TheGreatest.mp3 in Resources */,
+				0791B424208E9E200092E88A /* Dura.jpg in Resources */,
+				0791B406208E9C110092E88A /* VentePaCa.mp3 in Resources */,
+				07649204203FCD1000E02F14 /* ScaryHours.jpg in Resources */,
+				0791B429208E9E200092E88A /* UnaLadyComoTu.jpg in Resources */,
+				076501D0207B1EBA00451FF2 /* HeyDJ.mp3 in Resources */,
 				07E215B31FF598B90025B782 /* Main.storyboard in Resources */,
+				07A261952047C288003F85AC /* ReggaetonLento.mp3 in Resources */,
+				0791B407208E9C110092E88A /* Finesse.mp3 in Resources */,
+				076501B8207B1E4700451FF2 /* ComeFlyWithMe.jpg in Resources */,
+				0769CDC3203E7B9A00621EC7 /* PreviousLogo.png in Resources */,
+				076501D3207B1EBA00451FF2 /* HowLong.mp3 in Resources */,
+				0791B405208E9C110092E88A /* UnaLadyComoTu.mp3 in Resources */,
+				076501D2207B1EBA00451FF2 /* HastaElAmanecer.mp3 in Resources */,
+				0791B41F208E9E200092E88A /* MeRehuso.jpg in Resources */,
+				07D0BDB72005C86C004CEC25 /* LaunchScreen.storyboard in Resources */,
+				07A2618E2047C288003F85AC /* Corazon.mp3 in Resources */,
+				076501B5207B1E4700451FF2 /* FeelingGood.png in Resources */,
+				076501CF207B1EBA00451FF2 /* LetYouDown.mp3 in Resources */,
+				072BE2D52026E9F00056BF42 /* SongSlider2.png in Resources */,
+				07A2618D2047C288003F85AC /* Congratulations.mp3 in Resources */,
+				0791B421208E9E200092E88A /* ImTheOne.jpeg in Resources */,
+				0791B427208E9E200092E88A /* DuaLipa.jpg in Resources */,
+				07D0BDB92005CEB5004CEC25 /* LogicPic.jpeg in Resources */,
+				07649207203FCD1000E02F14 /* FelicesLos4.jpg in Resources */,
+				0791B40B208E9C110092E88A /* Dura.mp3 in Resources */,
+				07A2618F2047C288003F85AC /* Everybody.mp3 in Resources */,
+				07649206203FCD1000E02F14 /* Rockstar.jpg in Resources */,
+				070E2EDF200724940030FB6C /* PostMalone.jpg in Resources */,
+				07A261942047C288003F85AC /* Perfect.mp3 in Resources */,
+				0791B40F208E9C110092E88A /* EndGame.mp3 in Resources */,
+				07F78D6D207F02E4008F3719 /* BellaYSensual.jpg in Resources */,
+				0769CDC1203E7B9A00621EC7 /* VolumeLogo.png in Resources */,
+				0791B423208E9E200092E88A /* 1800.jpg in Resources */,
+				0791B40A208E9C110092E88A /* 1-800-273-8255.mp3 in Resources */,
+				07F78D68207F02E4008F3719 /* HastaElAmanecer.jpg in Resources */,
+				0791B426208E9E200092E88A /* Damn.jpg in Resources */,
+				07A261912047C288003F85AC /* FelicesLos4.mp3 in Resources */,
+				070E2EDD2007248E0030FB6C /* CheapThrills.jpg in Resources */,
+				076501CE207B1EBA00451FF2 /* BellaYSensual.mp3 in Resources */,
+				07A261922047C288003F85AC /* FlyMeToTheMoon.mp3 in Resources */,
+				07D0BDB62005C86C004CEC25 /* Assets.xcassets in Resources */,
+				076501B7207B1E4700451FF2 /* YouMakeMeFeelSoYoung.jpg in Resources */,
+				0791B411208E9C110092E88A /* ImTheOne.mp3 in Resources */,
+				0791B420208E9E200092E88A /* VentePaCa.jpg in Resources */,
+				07A261902047C288003F85AC /* FeelingGood.mp3 in Resources */,
+				0791B410208E9C110092E88A /* Humble.mp3 in Resources */,
+				0791B40D208E9C110092E88A /* MeRehuso.mp3 in Resources */,
+				0791B41E208E9E200092E88A /* EndGame.jpg in Resources */,
+				0791B404208E9C110092E88A /* DNA.mp3 in Resources */,
+				07F78D6B207F02E4008F3719 /* HeyDJ.jpg in Resources */,
+				07649209203FCD1000E02F14 /* Perfect.jpg in Resources */,
+				07A261732047C0C5003F85AC /* NoImageWarning.png in Resources */,
+				07649205203FCD1000E02F14 /* Corazon.jpg in Resources */,
+				078E596A2011AA5900048EA2 /* PlayButton.png in Resources */,
+				0791B40C208E9C110092E88A /* BorroCassette.mp3 in Resources */,
+				07A2618B2047C288003F85AC /* CheapThrills.mp3 in Resources */,
+				07F78D6C207F02E4008F3719 /* HowLong.jpg in Resources */,
+				076501D4207B1EBA00451FF2 /* Psycho.mp3 in Resources */,
+				0764920A203FCD1000E02F14 /* TheGreatest.jpg in Resources */,
+				072BE2C92026E1D80056BF42 /* SongSlider.png in Resources */,
+				0791B428208E9E200092E88A /* Broccoli.jpg in Resources */,
+				07F78D6E207F02E4008F3719 /* LetYouDown.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,28 +512,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07E215B01FF598B90025B782 /* ViewController.swift in Sources */,
-				07E215AE1FF598B90025B782 /* AppDelegate.swift in Sources */,
+				07BF0C8120072AE000D86E1C /* ViewController.swift in Sources */,
+				077C6C152033FB4500626003 /* SliderThumb.swift in Sources */,
+				07D0BDB52005C86C004CEC25 /* AppDelegate.swift in Sources */,
+				07CE481B204E53070084ECDE /* CustomTableViewCell.swift in Sources */,
+				070E2ED32006EC760030FB6C /* MusicController.swift in Sources */,
+				070E2ED12006EA8D0030FB6C /* MusicSong.swift in Sources */,
+				07E215FE1FF6C69D0025B782 /* AudioSystem.swift in Sources */,
+				07F78D70207F04F0008F3719 /* AllSongsStart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		07D0BDB32005C86B004CEC25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07D0BDB42005C86B004CEC25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		07E215B11FF598B90025B782 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				07E215B21FF598B90025B782 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		07E215B61FF598BA0025B782 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				07E215B71FF598BA0025B782 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -177,6 +559,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,8 +567,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -211,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -234,6 +619,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,8 +627,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -262,7 +650,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -273,14 +661,14 @@
 		07E215BD1FF598BB0025B782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MainAppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SAYWYS7JR;
 				INFOPLIST_FILE = MyMusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarlosRivas.MyMusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -288,14 +676,14 @@
 		07E215BE1FF598BB0025B782 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = MainAppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SAYWYS7JR;
 				INFOPLIST_FILE = MyMusicPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CarlosRivas.MyMusicPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

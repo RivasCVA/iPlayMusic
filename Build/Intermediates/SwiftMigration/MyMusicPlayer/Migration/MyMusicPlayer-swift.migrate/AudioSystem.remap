@@ -1,0 +1,23 @@
+[
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/AudioSystem.swift",
+    "offset": 580,
+    "text": "convertFrom"
+  },
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/AudioSystem.swift",
+    "offset": 602,
+    "remove": 1,
+    "text": "(AVAudioSession.Category.p"
+  },
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/AudioSystem.swift",
+    "offset": 610,
+    "text": ")"
+  },
+  {
+    "file": "/Users/Carlos/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/AudioSystem.swift",
+    "offset": 6529,
+    "text": "\n// Helper function inserted by Swift 4.2 migrator.\nfileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {\n\treturn input.rawValue\n}\n"
+  }
+]

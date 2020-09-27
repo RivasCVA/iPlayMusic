@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,467 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyMusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tYU-pD-tAp">
+                                <rect key="frame" x="287.66666666666669" y="598" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="YOo-FR-1Mp"/>
+                                    <constraint firstAttribute="height" constant="50" id="ahX-IT-zv7"/>
+                                </constraints>
+                                <state key="normal" title="Next" image="NextLogo.png"/>
+                                <connections>
+                                    <action selector="NextSongButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H83-CE-1eq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKH-5J-Ru5">
+                                <rect key="frame" x="37.666666666666664" y="598" width="49.999999999999993" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pVB-ez-oN0"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="zRw-Ys-eB4"/>
+                                </constraints>
+                                <state key="normal" title="Previous" image="PreviousLogo.png"/>
+                                <connections>
+                                    <action selector="PreviousSongButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzP-Yz-okb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-sV-gIr" userLabel="PlayButton">
+                                <rect key="frame" x="157.66666666666666" y="593" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Gwd-S8-NEA"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="kYi-sR-pCF"/>
+                                </constraints>
+                                <color key="tintColor" red="0.98096073650000004" green="1" blue="0.99097445979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Play" image="PlayButton.png"/>
+                                <connections>
+                                    <action selector="PlayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zei-uc-MJj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgX-0m-FSx" userLabel="PauseButton">
+                                <rect key="frame" x="157.66666666666666" y="593" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="4TN-Am-czl"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="60" id="y7g-zS-eS9"/>
+                                </constraints>
+                                <state key="normal" title="Pause" image="PauseButton.png"/>
+                                <connections>
+                                    <action selector="PauseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JHm-6R-okV"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jKp-zE-dT6" userLabel="ArtworkImageView">
+                                <rect key="frame" x="37.666666666666657" y="179" width="300" height="300"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="kno-h2-cQW"/>
+                                    <constraint firstAttribute="height" constant="300" id="vLT-KL-51a"/>
+                                </constraints>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="31D-z8-kgu" userLabel="SongElapsedTimeSlider" customClass="CenteredThumbSlider" customModule="MyMusicPlayer" customModuleProvider="target">
+                                <rect key="frame" x="35.666666666666657" y="516" width="304" height="31"/>
+                                <connections>
+                                    <action selector="SongElapsedTimeSliderChanged:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="XED-ch-87N"/>
+                                    <action selector="SongElapsedTimeSliderChanged:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtF-kh-enT"/>
+                                    <action selector="SongElapsedTimeSliderIsTracking:" destination="BYZ-38-t0r" eventType="valueChanged" id="z7F-5L-vkX"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FE6-Jx-0nP" userLabel="VolumeSlider" customClass="CenteredThumbSlider" customModule="MyMusicPlayer" customModuleProvider="target">
+                                <rect key="frame" x="95.666666666666686" y="716" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CEC-Hp-qdT"/>
+                                    <constraint firstAttribute="width" constant="196" id="Ym4-gV-Xgg"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="VolumeSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="dIo-vU-Nxq"/>
+                                </connections>
+                            </slider>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="[Song Name]" textAlignment="center" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="7YY-Ah-dzx" userLabel="SongNameLabel">
+                                <rect key="frame" x="107.66666666666669" y="109.66666666666667" width="160" height="35.333333333333329"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnt-k3-vGl" userLabel="VolumeLogo">
+                                <rect key="frame" x="48.666666666666664" y="716" width="29.999999999999993" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="EPT-By-T4s"/>
+                                    <constraint firstAttribute="height" constant="30" id="n8L-24-mt9"/>
+                                </constraints>
+                                <state key="normal" image="VolumeLogo.png"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[SongTime]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycl-5i-dCy">
+                                <rect key="frame" x="37.666666666666657" y="553" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="l8f-tf-zOA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="fill" text="[Artist Name]" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1xQ-g0-HYs" userLabel="ArtistNameLabel">
+                                <rect key="frame" x="133" y="150" width="109" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9Ep-WB-gBB">
+                                <rect key="frame" x="274" y="44" width="85" height="257"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJt-HG-8qM" userLabel="GenreButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="35"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="XxG-hS-ulD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <state key="normal" title="Genre">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="GenreButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nw0-a6-Y94"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raj-Xm-xvf" userLabel="AllGenreButton">
+                                        <rect key="frame" x="0.0" y="37" width="85" height="35"/>
+                                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="All">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="GenreTypeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNU-Y0-p9Y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1I-Ta-mDw" userLabel="PopButton">
+                                        <rect key="frame" x="0.0" y="74" width="85" height="35"/>
+                                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Pop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="GenreTypeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3w-uj-R1f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="e1L-n1-BFs" userLabel="HipHopButton">
+                                        <rect key="frame" x="0.0" y="111" width="85" height="35"/>
+                                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Hip Hop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="GenreTypeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rez-yF-fjC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="XkH-VT-5Mh" userLabel="LatinPopButton">
+                                        <rect key="frame" x="0.0" y="148" width="85" height="35"/>
+                                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Latin Pop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="GenreTypeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXH-VR-MJf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jvi-rJ-Bxx" userLabel="JazzButton">
+                                        <rect key="frame" x="0.0" y="185" width="85" height="35"/>
+                                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="Jazz">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="GenreTypeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YAc-kz-j8c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BMd-CD-lHb" userLabel="UnkownGenreButton">
+                                        <rect key="frame" x="0.0" y="222" width="85" height="35"/>
+                                        <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <state key="normal" title="?">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="GenreTypeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sBp-ze-P2D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="3b0-84-oNn"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZ8-4u-enP" userLabel="ShuffleButton">
+                                <rect key="frame" x="16" y="44" width="85" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="BXN-l6-ekM"/>
+                                    <constraint firstAttribute="height" constant="35" id="gGz-H1-xSe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Shuffle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ShuffleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUi-3h-FNV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="njy-db-9Gs">
+                                <rect key="frame" x="105" y="44" width="165" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8vb-i7-zsw"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="165" id="nKV-5f-Ptf"/>
+                                </constraints>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="SeachSongTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="eIe-gb-1C0"/>
+                                    <action selector="SearchSongTextFieldEditingDidBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="hZi-2N-hRj"/>
+                                    <action selector="SearchSongTextFieldEditingDidEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Luu-Kl-1Zj"/>
+                                    <action selector="SearchSongTextFieldValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="nGk-qV-J9O"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="4" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4lC-Kq-xnn" userLabel="SearchSongTableView">
+                                <rect key="frame" x="106" y="75" width="163" height="268"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="268" id="b1U-BW-0Yj"/>
+                                    <constraint firstAttribute="width" constant="163" id="nOQ-Uc-Wqz"/>
+                                </constraints>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchedsongs" rowHeight="55" id="BFw-8J-e9k" customClass="CustomTableViewCell" customModule="MyMusicPlayer" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="163" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BFw-8J-e9k" id="Ys5-ka-Erh">
+                                            <rect key="frame" x="0.0" y="0.0" width="163" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SongNameLabel" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="2" minimumFontSize="0.10000000000000001" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-vP-ZpU">
+                                                    <rect key="frame" x="58" y="3" width="100" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nua-gV-pvS" userLabel="Song Artwork">
+                                                    <rect key="frame" x="7" y="3" width="48" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ArtistNameLabel" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="3" minimumFontSize="1" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QIh-26-Udo">
+                                                    <rect key="frame" x="58" y="26" width="100" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94976768069999995" green="0.94976768069999995" blue="0.94976768069999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.94976768071218132" green="0.94976768071218132" blue="0.94976768071218132" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <outlet property="ArtistNameLabel" destination="QIh-26-Udo" id="45j-j9-Kld"/>
+                                            <outlet property="SongArtwork" destination="Nua-gV-pvS" id="9HY-1H-jmj"/>
+                                            <outlet property="SongNameLabel" destination="ld4-vP-ZpU" id="xJ4-Ur-zGx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="nil" keyPath="backgroundView"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bhU-Nq-CAf"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made By: Carlos Rivas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aee-2G-jZU">
+                                <rect key="frame" x="103" y="751" width="169" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.89411764705882346" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aee-2G-jZU" firstAttribute="centerX" secondItem="jKp-zE-dT6" secondAttribute="centerX" id="0Sa-jn-aUo"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="top" secondItem="1xQ-g0-HYs" secondAttribute="bottom" constant="8" symbolic="YES" id="2Co-hz-Bvs"/>
+                            <constraint firstItem="31D-z8-kgu" firstAttribute="width" secondItem="jKp-zE-dT6" secondAttribute="width" id="2dN-k4-k2E"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="centerX" secondItem="4lC-Kq-xnn" secondAttribute="centerX" id="4zm-Z4-Xmh"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7dj-gJ-rlA"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="centerX" secondItem="njy-db-9Gs" secondAttribute="centerX" id="7nw-DI-hpC"/>
+                            <constraint firstItem="FE6-Jx-0nP" firstAttribute="centerX" secondItem="jKp-zE-dT6" secondAttribute="centerX" constant="8.0000000000000284" id="AM2-iR-12O"/>
+                            <constraint firstItem="tYU-pD-tAp" firstAttribute="centerY" secondItem="VgX-0m-FSx" secondAttribute="centerY" id="Aqu-15-FGB"/>
+                            <constraint firstItem="ycl-5i-dCy" firstAttribute="trailing" secondItem="31D-z8-kgu" secondAttribute="trailing" id="FiM-yN-eIJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7YY-Ah-dzx" secondAttribute="trailing" constant="10" id="GVP-5d-cYL"/>
+                            <constraint firstItem="vuL-sV-gIr" firstAttribute="centerX" secondItem="jKp-zE-dT6" secondAttribute="centerX" id="Gg7-Hw-BpE"/>
+                            <constraint firstItem="vuL-sV-gIr" firstAttribute="leading" secondItem="IKH-5J-Ru5" secondAttribute="trailing" constant="70" id="HgV-cV-80o"/>
+                            <constraint firstItem="FE6-Jx-0nP" firstAttribute="centerX" secondItem="jKp-zE-dT6" secondAttribute="centerX" constant="8.0000000000000284" id="Ig0-jk-xOe"/>
+                            <constraint firstItem="9Ep-WB-gBB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="IwH-3A-5cv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Ep-WB-gBB" secondAttribute="trailing" id="OzV-QS-qpR"/>
+                            <constraint firstItem="iZ8-4u-enP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P1j-rx-add"/>
+                            <constraint firstItem="VgX-0m-FSx" firstAttribute="centerY" secondItem="vuL-sV-gIr" secondAttribute="centerY" id="PQ9-pd-oon"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="top" secondItem="7YY-Ah-dzx" secondAttribute="bottom" constant="34" id="QGL-sQ-mPN"/>
+                            <constraint firstItem="31D-z8-kgu" firstAttribute="top" secondItem="jKp-zE-dT6" secondAttribute="bottom" constant="37" id="RBh-XG-OqK"/>
+                            <constraint firstItem="ycl-5i-dCy" firstAttribute="top" secondItem="31D-z8-kgu" secondAttribute="bottom" constant="7" id="TKO-cG-nVP"/>
+                            <constraint firstItem="FE6-Jx-0nP" firstAttribute="top" secondItem="31D-z8-kgu" secondAttribute="bottom" constant="170" id="WuL-gl-y2q"/>
+                            <constraint firstItem="VgX-0m-FSx" firstAttribute="centerX" secondItem="jKp-zE-dT6" secondAttribute="centerX" id="XkM-nj-zZM"/>
+                            <constraint firstItem="VgX-0m-FSx" firstAttribute="centerY" secondItem="IKH-5J-Ru5" secondAttribute="centerY" id="YHH-0s-UV4"/>
+                            <constraint firstItem="FE6-Jx-0nP" firstAttribute="leading" secondItem="xnt-k3-vGl" secondAttribute="trailing" constant="19.000000000000028" id="ZqG-64-vNq"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-77" id="bu8-ft-n5P"/>
+                            <constraint firstItem="tYU-pD-tAp" firstAttribute="trailing" secondItem="31D-z8-kgu" secondAttribute="trailing" id="cQN-cK-QWX"/>
+                            <constraint firstItem="4lC-Kq-xnn" firstAttribute="top" secondItem="njy-db-9Gs" secondAttribute="bottom" constant="1" id="dGq-Fx-akW"/>
+                            <constraint firstItem="aee-2G-jZU" firstAttribute="top" secondItem="FE6-Jx-0nP" secondAttribute="bottom" constant="5" id="dku-BV-Yps"/>
+                            <constraint firstItem="njy-db-9Gs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="e3W-jk-FX5"/>
+                            <constraint firstItem="tYU-pD-tAp" firstAttribute="leading" secondItem="vuL-sV-gIr" secondAttribute="trailing" constant="70" id="ehD-X1-07M"/>
+                            <constraint firstItem="1xQ-g0-HYs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="eih-BI-ZfE"/>
+                            <constraint firstItem="7YY-Ah-dzx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="gpm-Hx-sKo"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="centerX" secondItem="7YY-Ah-dzx" secondAttribute="centerX" id="hEK-Qg-T3c"/>
+                            <constraint firstItem="31D-z8-kgu" firstAttribute="centerX" secondItem="jKp-zE-dT6" secondAttribute="centerX" id="l6i-al-XD4"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="centerX" secondItem="1xQ-g0-HYs" secondAttribute="centerX" id="met-Vo-LtQ"/>
+                            <constraint firstItem="vuL-sV-gIr" firstAttribute="top" secondItem="31D-z8-kgu" secondAttribute="bottom" constant="47" id="n5k-5T-CdV"/>
+                            <constraint firstItem="ycl-5i-dCy" firstAttribute="leading" secondItem="31D-z8-kgu" secondAttribute="leading" id="nos-0Y-2vf"/>
+                            <constraint firstItem="IKH-5J-Ru5" firstAttribute="leading" secondItem="31D-z8-kgu" secondAttribute="leading" id="pQw-J8-y6L"/>
+                            <constraint firstItem="FE6-Jx-0nP" firstAttribute="centerY" secondItem="xnt-k3-vGl" secondAttribute="centerY" id="qFd-2g-icd"/>
+                            <constraint firstItem="iZ8-4u-enP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="rQp-Ei-6dB"/>
+                            <constraint firstItem="jKp-zE-dT6" firstAttribute="top" secondItem="1xQ-g0-HYs" secondAttribute="bottom" constant="8" id="waq-bD-MLh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1xQ-g0-HYs" secondAttribute="trailing" constant="10" id="ySv-zN-oCc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ArtistNameLabel" destination="1xQ-g0-HYs" id="laW-5a-8KD"/>
+                        <outlet property="ArtworkImageView" destination="jKp-zE-dT6" id="B53-YP-88p"/>
+                        <outlet property="GenrePullDownButton" destination="kJt-HG-8qM" id="0UB-7O-uN2"/>
+                        <outlet property="PauseButton" destination="VgX-0m-FSx" id="kTF-5h-IW1"/>
+                        <outlet property="PlayButton" destination="vuL-sV-gIr" id="QxK-tZ-50p"/>
+                        <outlet property="SearchSongTableView" destination="4lC-Kq-xnn" id="rEM-TT-hAk"/>
+                        <outlet property="SearchSongTextField" destination="njy-db-9Gs" id="1Vd-X0-KSX"/>
+                        <outlet property="ShuffleButton" destination="iZ8-4u-enP" id="Msx-Vg-tWk"/>
+                        <outlet property="SongElapsedTimeSlider" destination="31D-z8-kgu" id="xX2-z6-ltZ"/>
+                        <outlet property="SongNameLabel" destination="7YY-Ah-dzx" id="Gvh-qY-sKg"/>
+                        <outlet property="SongTimeLabel" destination="ycl-5i-dCy" id="6fn-rL-bbh"/>
+                        <outlet property="VolumeSlider" destination="FE6-Jx-0nP" id="RQH-sT-cOp"/>
+                        <outlet property="playButton" destination="vuL-sV-gIr" id="wcK-Qt-YqL"/>
+                        <outletCollection property="GenreTypeButtons" destination="o1I-Ta-mDw" collectionClass="NSMutableArray" id="8ON-yu-bYq"/>
+                        <outletCollection property="GenreTypeButtons" destination="e1L-n1-BFs" collectionClass="NSMutableArray" id="zJb-TZ-Hme"/>
+                        <outletCollection property="GenreTypeButtons" destination="XkH-VT-5Mh" collectionClass="NSMutableArray" id="voZ-oL-50P"/>
+                        <outletCollection property="GenreTypeButtons" destination="jvi-rJ-Bxx" collectionClass="NSMutableArray" id="ouI-YG-DHi"/>
+                        <outletCollection property="GenreTypeButtons" destination="BMd-CD-lHb" collectionClass="NSMutableArray" id="0RE-4p-Uvr"/>
+                        <outletCollection property="GenreTypeButtons" destination="raj-Xm-xvf" collectionClass="NSMutableArray" id="bvZ-cl-lVa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="33.251231527093594"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NextLogo.png" width="2000" height="2000"/>
+        <image name="PauseButton.png" width="436" height="437"/>
+        <image name="PlayButton.png" width="440" height="438"/>
+        <image name="PreviousLogo.png" width="2000" height="2000"/>
+        <image name="VolumeLogo.png" width="2000" height="2000"/>
+    </resources>
 </document>

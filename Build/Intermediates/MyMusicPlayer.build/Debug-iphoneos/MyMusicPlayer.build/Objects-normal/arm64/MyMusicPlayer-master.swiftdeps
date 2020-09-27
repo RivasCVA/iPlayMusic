@@ -1,0 +1,12 @@
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "246f5f888b5b293721412a2642e53488"
+build_time: [1537483804, 530597000]
+inputs:
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/ViewController.swift": [1523502924, 0]
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/SliderThumb.swift": [1518584812, 0]
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/Defaults/AppDelegate.swift": [1514496313, 0]
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/CustomTableViewCell.swift": [1520570457, 0]
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/MusicController.swift": [1523318079, 0]
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/MusicSong.swift": [1522812760, 0]
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/AudioSystem.swift": [1519359894, 0]
+  "/Users/Carlos/iCloud Drive/Documents/Xcode Projects/MyMusicPlayer/MyMusicPlayer/AllSongsStart.swift": [1524526308, 0]

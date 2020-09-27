@@ -7,4 +7,4 @@ A simple music player iOS App. This is was my first iOS project back in 2017, de
 Please don't judge this project too harshly. It was my first iOS project in late 2017 during my Junior year of High School. I have learned a lot more about iOS developement since then. Everyone has to start somewhere, am I right?
 
 # Was it Published?
-Of course not. It was just a hobby project and is no where near being publishable. The songs it has are static, and one cannot download more songs.
+Of course not. It was just a hobby project and is nowhere near being publishable. The downloaded songs are static, and the only way to add more songs would be to roll out an update with the new songs added in.

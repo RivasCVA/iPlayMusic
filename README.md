@@ -1,5 +1,5 @@
 # iPlay Music
-An iOS music player. This was my first iOS project back in 2017, dedicated to learn Swift and Xcode.
+An iOS music player. This was my first iOS project back in 2017, dedicated to learn Swift and Xcode. It has the ability to play music when the app is in the background, and the music can be controlled outside the app using iOS's Now Playing Info Center.
 
 [![iPlayMusic](https://user-images.githubusercontent.com/60367213/94369964-701c1780-00b2-11eb-9ec0-12e670ab0cb0.png)](#)
 
